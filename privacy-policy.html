@@ -78,7 +78,7 @@
                 </div>
                 <div class="nav-btns d-flex align-items-center">
                     <div class="primary-btn">
-                        <a href="#">Live Chat</a>
+                        <a id="openChat" href="#">Live Chat</a>
                     </div>
                 </div>
             </nav>
@@ -188,17 +188,24 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/custom.js"></script>
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/67ca72d45f37e3190d234bff/1ilnd13pg';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67ca72d45f37e3190d234bff/1ilnd13pg';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
+    <script>
+        document.getElementById("openChat").addEventListener("click", function () {
+            if (typeof Tawk_API !== "undefined" && Tawk_API.maximize) {
+                Tawk_API.maximize(); // Opens the chat widget
+            }
+        });
+    </script>
 </body>
 </html>
